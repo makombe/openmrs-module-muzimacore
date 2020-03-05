@@ -497,7 +497,7 @@ public class JsonEncounterQueueDataHandler implements QueueDataHandler {
                 encounter.getEncounterDatetime(), null, null, null, true, false);
 
         for (Visit visit : visits) {
-            // Skip visits which ended before the encounter date
+            // Skip visits which ended before the encounter dategit
             if (visit.getStopDatetime() != null && visit.getStopDatetime().before(encounter.getEncounterDatetime())) {
                 continue;
             }
